@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C37B0E55174FB84300C1AC1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0E54174FB84300C1AC1A /* UIKit.framework */; };
+		C37B0E57174FB84300C1AC1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0E56174FB84300C1AC1A /* Foundation.framework */; };
+		C37B0E59174FB84300C1AC1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0E58174FB84300C1AC1A /* CoreGraphics.framework */; };
+		C37B0E5F174FB84300C1AC1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E5D174FB84300C1AC1A /* InfoPlist.strings */; };
+		C37B0E61174FB84300C1AC1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B0E60174FB84300C1AC1A /* main.m */; };
+		C37B0E65174FB84300C1AC1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B0E64174FB84300C1AC1A /* AppDelegate.m */; };
+		C37B0E67174FB84300C1AC1A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E66174FB84300C1AC1A /* Default.png */; };
+		C37B0E69174FB84300C1AC1A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E68174FB84300C1AC1A /* Default@2x.png */; };
+		C37B0E6B174FB84300C1AC1A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E6A174FB84300C1AC1A /* Default-568h@2x.png */; };
+		C37B0E6E174FB84300C1AC1A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E6C174FB84300C1AC1A /* MainStoryboard.storyboard */; };
+		C37B0E78174FB8DB00C1AC1A /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0E77174FB8DB00C1AC1A /* Opentok.framework */; };
+		C37B0E83174FB8E300C1AC1A /* UIProgressLessonView.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B0E7D174FB8E300C1AC1A /* UIProgressLessonView.m */; };
+		C37B0E84174FB8E300C1AC1A /* UIToolbarVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B0E7F174FB8E300C1AC1A /* UIToolbarVideoView.m */; };
+		C37B0E85174FB8E300C1AC1A /* VideoLessonController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B0E81174FB8E300C1AC1A /* VideoLessonController.m */; };
+		C37B0E8F174FBABF00C1AC1A /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E87174FBABF00C1AC1A /* microphone.png */; };
+		C37B0E90174FBABF00C1AC1A /* microphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E88174FBABF00C1AC1A /* microphone@2x.png */; };
+		C37B0E91174FBABF00C1AC1A /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E89174FBABF00C1AC1A /* pause.png */; };
+		C37B0E92174FBABF00C1AC1A /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E8A174FBABF00C1AC1A /* pause@2x.png */; };
+		C37B0E93174FBABF00C1AC1A /* progress.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E8B174FBABF00C1AC1A /* progress.png */; };
+		C37B0E94174FBABF00C1AC1A /* track.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E8C174FBABF00C1AC1A /* track.png */; };
+		C37B0E95174FBABF00C1AC1A /* warning.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E8D174FBABF00C1AC1A /* warning.png */; };
+		C37B0E96174FBABF00C1AC1A /* warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E8E174FBABF00C1AC1A /* warning@2x.png */; };
+		C37B0E98174FBB7300C1AC1A /* opentok.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C37B0E97174FBB7300C1AC1A /* opentok.bundle */; };
+		C37B0E9A174FBBBC00C1AC1A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0E99174FBBBC00C1AC1A /* CFNetwork.framework */; };
+		C37B0E9C174FBBD700C1AC1A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0E9B174FBBD700C1AC1A /* CoreTelephony.framework */; };
+		C37B0E9E174FBBE000C1AC1A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0E9D174FBBE000C1AC1A /* AudioToolbox.framework */; };
+		C37B0EA0174FBBE500C1AC1A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0E9F174FBBE500C1AC1A /* AVFoundation.framework */; };
+		C37B0EA2174FBBEB00C1AC1A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0EA1174FBBEB00C1AC1A /* CoreAudio.framework */; };
+		C37B0EA4174FBBF000C1AC1A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0EA3174FBBF000C1AC1A /* CoreMedia.framework */; };
+		C37B0EA6174FBBF500C1AC1A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0EA5174FBBF500C1AC1A /* CoreVideo.framework */; };
+		C37B0EA8174FBBFC00C1AC1A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0EA7174FBBFC00C1AC1A /* libz.dylib */; };
+		C37B0EAA174FBC0100C1AC1A /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0EA9174FBC0100C1AC1A /* libstdc++.dylib */; };
+		C37B0EAC174FBC0800C1AC1A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0EAB174FBC0700C1AC1A /* OpenGLES.framework */; };
+		C37B0EAE174FBC0C00C1AC1A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0EAD174FBC0B00C1AC1A /* Security.framework */; };
+		C37B0EB0174FBC1000C1AC1A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0EAF174FBC1000C1AC1A /* SystemConfiguration.framework */; };
+		C37B0EB2174FBC2100C1AC1A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0EB1174FBC2100C1AC1A /* MobileCoreServices.framework */; };
+		C37B0EB4174FBC2900C1AC1A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B0EB3174FBC2900C1AC1A /* QuartzCore.framework */; };
+		C37B0EB9174FBD4200C1AC1A /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0EB5174FBD4200C1AC1A /* chat.png */; };
+		C37B0EBA174FBD4200C1AC1A /* chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0EB6174FBD4200C1AC1A /* chat@2x.png */; };
+		C37B0EBB174FBD4200C1AC1A /* eye_white.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0EB7174FBD4200C1AC1A /* eye_white.png */; };
+		C37B0EBC174FBD4200C1AC1A /* eye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B0EB8174FBD4200C1AC1A /* eye@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C37B0E51174FB84300C1AC1A /* OpenTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37B0E54174FB84300C1AC1A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C37B0E56174FB84300C1AC1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C37B0E58174FB84300C1AC1A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C37B0E5C174FB84300C1AC1A /* OpenTok-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenTok-Info.plist"; sourceTree = "<group>"; };
+		C37B0E5E174FB84300C1AC1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C37B0E60174FB84300C1AC1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C37B0E62174FB84300C1AC1A /* OpenTok-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenTok-Prefix.pch"; sourceTree = "<group>"; };
+		C37B0E63174FB84300C1AC1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C37B0E64174FB84300C1AC1A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C37B0E66174FB84300C1AC1A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C37B0E68174FB84300C1AC1A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C37B0E6A174FB84300C1AC1A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C37B0E6D174FB84300C1AC1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C37B0E77174FB8DB00C1AC1A /* Opentok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Opentok.framework; sourceTree = "<group>"; };
+		C37B0E7C174FB8E300C1AC1A /* UIProgressLessonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIProgressLessonView.h; sourceTree = "<group>"; };
+		C37B0E7D174FB8E300C1AC1A /* UIProgressLessonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIProgressLessonView.m; sourceTree = "<group>"; };
+		C37B0E7E174FB8E300C1AC1A /* UIToolbarVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIToolbarVideoView.h; sourceTree = "<group>"; };
+		C37B0E7F174FB8E300C1AC1A /* UIToolbarVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIToolbarVideoView.m; sourceTree = "<group>"; };
+		C37B0E80174FB8E300C1AC1A /* VideoLessonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoLessonController.h; sourceTree = "<group>"; };
+		C37B0E81174FB8E300C1AC1A /* VideoLessonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoLessonController.m; sourceTree = "<group>"; };
+		C37B0E87174FBABF00C1AC1A /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
+		C37B0E88174FBABF00C1AC1A /* microphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone@2x.png"; sourceTree = "<group>"; };
+		C37B0E89174FBABF00C1AC1A /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		C37B0E8A174FBABF00C1AC1A /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@2x.png"; sourceTree = "<group>"; };
+		C37B0E8B174FBABF00C1AC1A /* progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress.png; sourceTree = "<group>"; };
+		C37B0E8C174FBABF00C1AC1A /* track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = track.png; sourceTree = "<group>"; };
+		C37B0E8D174FBABF00C1AC1A /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
+		C37B0E8E174FBABF00C1AC1A /* warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning@2x.png"; sourceTree = "<group>"; };
+		C37B0E97174FBB7300C1AC1A /* opentok.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = opentok.bundle; sourceTree = "<group>"; };
+		C37B0E99174FBBBC00C1AC1A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C37B0E9B174FBBD700C1AC1A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C37B0E9D174FBBE000C1AC1A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C37B0E9F174FBBE500C1AC1A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C37B0EA1174FBBEB00C1AC1A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		C37B0EA3174FBBF000C1AC1A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C37B0EA5174FBBF500C1AC1A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		C37B0EA7174FBBFC00C1AC1A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C37B0EA9174FBC0100C1AC1A /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		C37B0EAB174FBC0700C1AC1A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C37B0EAD174FBC0B00C1AC1A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C37B0EAF174FBC1000C1AC1A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C37B0EB1174FBC2100C1AC1A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C37B0EB3174FBC2900C1AC1A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C37B0EB5174FBD4200C1AC1A /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
+		C37B0EB6174FBD4200C1AC1A /* chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat@2x.png"; sourceTree = "<group>"; };
+		C37B0EB7174FBD4200C1AC1A /* eye_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye_white.png; sourceTree = "<group>"; };
+		C37B0EB8174FBD4200C1AC1A /* eye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C37B0E4E174FB84300C1AC1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37B0EB4174FBC2900C1AC1A /* QuartzCore.framework in Frameworks */,
+				C37B0EB2174FBC2100C1AC1A /* MobileCoreServices.framework in Frameworks */,
+				C37B0EB0174FBC1000C1AC1A /* SystemConfiguration.framework in Frameworks */,
+				C37B0EAE174FBC0C00C1AC1A /* Security.framework in Frameworks */,
+				C37B0EAC174FBC0800C1AC1A /* OpenGLES.framework in Frameworks */,
+				C37B0EAA174FBC0100C1AC1A /* libstdc++.dylib in Frameworks */,
+				C37B0EA8174FBBFC00C1AC1A /* libz.dylib in Frameworks */,
+				C37B0EA6174FBBF500C1AC1A /* CoreVideo.framework in Frameworks */,
+				C37B0EA4174FBBF000C1AC1A /* CoreMedia.framework in Frameworks */,
+				C37B0EA2174FBBEB00C1AC1A /* CoreAudio.framework in Frameworks */,
+				C37B0EA0174FBBE500C1AC1A /* AVFoundation.framework in Frameworks */,
+				C37B0E9E174FBBE000C1AC1A /* AudioToolbox.framework in Frameworks */,
+				C37B0E9C174FBBD700C1AC1A /* CoreTelephony.framework in Frameworks */,
+				C37B0E9A174FBBBC00C1AC1A /* CFNetwork.framework in Frameworks */,
+				C37B0E55174FB84300C1AC1A /* UIKit.framework in Frameworks */,
+				C37B0E57174FB84300C1AC1A /* Foundation.framework in Frameworks */,
+				C37B0E59174FB84300C1AC1A /* CoreGraphics.framework in Frameworks */,
+				C37B0E78174FB8DB00C1AC1A /* Opentok.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C37B0E48174FB84200C1AC1A = {
+			isa = PBXGroup;
+			children = (
+				C37B0E5A174FB84300C1AC1A /* OpenTok */,
+				C37B0E53174FB84300C1AC1A /* Frameworks */,
+				C37B0E52174FB84300C1AC1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C37B0E52174FB84300C1AC1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C37B0E51174FB84300C1AC1A /* OpenTok.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C37B0E53174FB84300C1AC1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C37B0EB3174FBC2900C1AC1A /* QuartzCore.framework */,
+				C37B0EB1174FBC2100C1AC1A /* MobileCoreServices.framework */,
+				C37B0EAF174FBC1000C1AC1A /* SystemConfiguration.framework */,
+				C37B0EAD174FBC0B00C1AC1A /* Security.framework */,
+				C37B0EAB174FBC0700C1AC1A /* OpenGLES.framework */,
+				C37B0EA9174FBC0100C1AC1A /* libstdc++.dylib */,
+				C37B0EA7174FBBFC00C1AC1A /* libz.dylib */,
+				C37B0EA5174FBBF500C1AC1A /* CoreVideo.framework */,
+				C37B0EA3174FBBF000C1AC1A /* CoreMedia.framework */,
+				C37B0EA1174FBBEB00C1AC1A /* CoreAudio.framework */,
+				C37B0E9F174FBBE500C1AC1A /* AVFoundation.framework */,
+				C37B0E9D174FBBE000C1AC1A /* AudioToolbox.framework */,
+				C37B0E9B174FBBD700C1AC1A /* CoreTelephony.framework */,
+				C37B0E99174FBBBC00C1AC1A /* CFNetwork.framework */,
+				C37B0E77174FB8DB00C1AC1A /* Opentok.framework */,
+				C37B0E54174FB84300C1AC1A /* UIKit.framework */,
+				C37B0E56174FB84300C1AC1A /* Foundation.framework */,
+				C37B0E58174FB84300C1AC1A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C37B0E5A174FB84300C1AC1A /* OpenTok */ = {
+			isa = PBXGroup;
+			children = (
+				C37B0E86174FBABF00C1AC1A /* Icons */,
+				C37B0E79174FB8E300C1AC1A /* Video scenario */,
+				C37B0E63174FB84300C1AC1A /* AppDelegate.h */,
+				C37B0E64174FB84300C1AC1A /* AppDelegate.m */,
+				C37B0E6C174FB84300C1AC1A /* MainStoryboard.storyboard */,
+				C37B0E5B174FB84300C1AC1A /* Supporting Files */,
+			);
+			path = OpenTok;
+			sourceTree = "<group>";
+		};
+		C37B0E5B174FB84300C1AC1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C37B0E5C174FB84300C1AC1A /* OpenTok-Info.plist */,
+				C37B0E5D174FB84300C1AC1A /* InfoPlist.strings */,
+				C37B0E60174FB84300C1AC1A /* main.m */,
+				C37B0E62174FB84300C1AC1A /* OpenTok-Prefix.pch */,
+				C37B0E66174FB84300C1AC1A /* Default.png */,
+				C37B0E68174FB84300C1AC1A /* Default@2x.png */,
+				C37B0E6A174FB84300C1AC1A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C37B0E79174FB8E300C1AC1A /* Video scenario */ = {
+			isa = PBXGroup;
+			children = (
+				C37B0E7C174FB8E300C1AC1A /* UIProgressLessonView.h */,
+				C37B0E7D174FB8E300C1AC1A /* UIProgressLessonView.m */,
+				C37B0E7E174FB8E300C1AC1A /* UIToolbarVideoView.h */,
+				C37B0E7F174FB8E300C1AC1A /* UIToolbarVideoView.m */,
+				C37B0E80174FB8E300C1AC1A /* VideoLessonController.h */,
+				C37B0E81174FB8E300C1AC1A /* VideoLessonController.m */,
+			);
+			path = "Video scenario";
+			sourceTree = "<group>";
+		};
+		C37B0E86174FBABF00C1AC1A /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				C37B0E97174FBB7300C1AC1A /* opentok.bundle */,
+				C37B0EB5174FBD4200C1AC1A /* chat.png */,
+				C37B0EB6174FBD4200C1AC1A /* chat@2x.png */,
+				C37B0EB7174FBD4200C1AC1A /* eye_white.png */,
+				C37B0EB8174FBD4200C1AC1A /* eye@2x.png */,
+				C37B0E87174FBABF00C1AC1A /* microphone.png */,
+				C37B0E88174FBABF00C1AC1A /* microphone@2x.png */,
+				C37B0E89174FBABF00C1AC1A /* pause.png */,
+				C37B0E8A174FBABF00C1AC1A /* pause@2x.png */,
+				C37B0E8B174FBABF00C1AC1A /* progress.png */,
+				C37B0E8C174FBABF00C1AC1A /* track.png */,
+				C37B0E8D174FBABF00C1AC1A /* warning.png */,
+				C37B0E8E174FBABF00C1AC1A /* warning@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C37B0E50174FB84300C1AC1A /* OpenTok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C37B0E74174FB84300C1AC1A /* Build configuration list for PBXNativeTarget "OpenTok" */;
+			buildPhases = (
+				C37B0E4D174FB84300C1AC1A /* Sources */,
+				C37B0E4E174FB84300C1AC1A /* Frameworks */,
+				C37B0E4F174FB84300C1AC1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenTok;
+			productName = OpenTok;
+			productReference = C37B0E51174FB84300C1AC1A /* OpenTok.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C37B0E49174FB84200C1AC1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Lenhador;
+			};
+			buildConfigurationList = C37B0E4C174FB84200C1AC1A /* Build configuration list for PBXProject "OpenTok" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C37B0E48174FB84200C1AC1A;
+			productRefGroup = C37B0E52174FB84300C1AC1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C37B0E50174FB84300C1AC1A /* OpenTok */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C37B0E4F174FB84300C1AC1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37B0E5F174FB84300C1AC1A /* InfoPlist.strings in Resources */,
+				C37B0E67174FB84300C1AC1A /* Default.png in Resources */,
+				C37B0E69174FB84300C1AC1A /* Default@2x.png in Resources */,
+				C37B0E6B174FB84300C1AC1A /* Default-568h@2x.png in Resources */,
+				C37B0E6E174FB84300C1AC1A /* MainStoryboard.storyboard in Resources */,
+				C37B0E8F174FBABF00C1AC1A /* microphone.png in Resources */,
+				C37B0E90174FBABF00C1AC1A /* microphone@2x.png in Resources */,
+				C37B0E91174FBABF00C1AC1A /* pause.png in Resources */,
+				C37B0E92174FBABF00C1AC1A /* pause@2x.png in Resources */,
+				C37B0E93174FBABF00C1AC1A /* progress.png in Resources */,
+				C37B0E94174FBABF00C1AC1A /* track.png in Resources */,
+				C37B0E95174FBABF00C1AC1A /* warning.png in Resources */,
+				C37B0E96174FBABF00C1AC1A /* warning@2x.png in Resources */,
+				C37B0E98174FBB7300C1AC1A /* opentok.bundle in Resources */,
+				C37B0EB9174FBD4200C1AC1A /* chat.png in Resources */,
+				C37B0EBA174FBD4200C1AC1A /* chat@2x.png in Resources */,
+				C37B0EBB174FBD4200C1AC1A /* eye_white.png in Resources */,
+				C37B0EBC174FBD4200C1AC1A /* eye@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C37B0E4D174FB84300C1AC1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37B0E61174FB84300C1AC1A /* main.m in Sources */,
+				C37B0E65174FB84300C1AC1A /* AppDelegate.m in Sources */,
+				C37B0E83174FB8E300C1AC1A /* UIProgressLessonView.m in Sources */,
+				C37B0E84174FB8E300C1AC1A /* UIToolbarVideoView.m in Sources */,
+				C37B0E85174FB8E300C1AC1A /* VideoLessonController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C37B0E5D174FB84300C1AC1A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C37B0E5E174FB84300C1AC1A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C37B0E6C174FB84300C1AC1A /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C37B0E6D174FB84300C1AC1A /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C37B0E72174FB84300C1AC1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C37B0E73174FB84300C1AC1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C37B0E75174FB84300C1AC1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenTok/OpenTok-Prefix.pch";
+				INFOPLIST_FILE = "OpenTok/OpenTok-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C37B0E76174FB84300C1AC1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenTok/OpenTok-Prefix.pch";
+				INFOPLIST_FILE = "OpenTok/OpenTok-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C37B0E4C174FB84200C1AC1A /* Build configuration list for PBXProject "OpenTok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37B0E72174FB84300C1AC1A /* Debug */,
+				C37B0E73174FB84300C1AC1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C37B0E74174FB84300C1AC1A /* Build configuration list for PBXNativeTarget "OpenTok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37B0E75174FB84300C1AC1A /* Debug */,
+				C37B0E76174FB84300C1AC1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C37B0E49174FB84200C1AC1A /* Project object */;
+}
